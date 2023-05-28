@@ -18,11 +18,11 @@ nltk.download('punkt')
 
 # Run the Application 
 python -m streamlit run App.py
+## Result after the running command
 !['Result after running'](running.png)
 
-# Execution
-In the browser :
+## Execution In the browser :
 !['In the browser'](mainscreen.png)
 
-After Loading of a resume:
-!['Apres ajout d'un cv'](afterloadresume)
+## After Loading of a resume:
+!['Apres ajout d'un cv'](afterloadresume.png)
