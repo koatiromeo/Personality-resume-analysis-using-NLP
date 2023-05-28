@@ -1,4 +1,6 @@
 pdfminer3
+nltk
+spacy
 pyresparser
 streamlit
 pandas
@@ -7,3 +9,5 @@ plotly
 pymysql
 streamlit-tags
 Pillow
+guess_indian_gender
+scikit-learn

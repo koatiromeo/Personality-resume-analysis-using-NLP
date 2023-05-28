@@ -1,9 +1,8 @@
 import streamlit as st
 import pandas as pd
-import base64,random
-import time,datetime
+import base64
 from pyresparser import ResumeParser
-from pdfminer3.layout import LAParams, LTTextBox
+from pdfminer3.layout import LAParams
 from pdfminer3.pdfpage import PDFPage
 from pdfminer3.pdfinterp import PDFResourceManager
 from pdfminer3.pdfinterp import PDFPageInterpreter
@@ -11,13 +10,7 @@ from pdfminer3.converter import TextConverter
 import io,random
 from streamlit_tags import st_tags
 from PIL import Image
-import pymysql
-from Courses import ds_course,web_course,android_course,ios_course,uiux_course,resume_videos,interview_videos
-import pafy
-import plotly.express as px
 import pickle
-from sklearn.feature_extraction.text import CountVectorizer
-import plotly.express as px
 import pandas as pd
 import re
 from datetime import date
@@ -76,7 +69,6 @@ def pdf_reader(file):
                                       caching=True,
                                       check_extractable=True):
             page_interpreter.process_page(page)
-            print(page)
         text = fake_file_handle.getvalue()
 
     # close open handles
@@ -158,8 +150,6 @@ def run():
                     item.replace('\r', '').replace('\n', '')
                     for item in sentences
                 ]
-                print("Arrive IC")
-                print("\n\n Les sentences  \n", clear_sentences)
                 
                 ##Find trait 
                 datastrait = {
