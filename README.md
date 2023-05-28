@@ -5,16 +5,16 @@ The applcation help to determined the personality of a resume with the giving of
 Python Version 3 
 
 # Cloning the projet 
-git clone https://github.com/koatiromeo/Personality-resume-analysis-using-NLP.git
-cd Personality-resume-analysis-using-NLP
+git clone https://github.com/koatiromeo/Personality-resume-analysis-using-NLP.git <br />
+cd Personality-resume-analysis-using-NLP <br />
 
 # Installing Dependencies packages
-python -m pip install -r requirements.txt
-python -m pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.3.1/en_core_web_sm-2.3.1.tar.gz
-python
-import nltk
-nltk.download('stopwords')
-nltk.download('punkt')
+python -m pip install -r requirements.txt <br />
+python -m pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.3.1/en_core_web_sm-2.3.1.tar.gz <br />
+python <br />
+import nltk <br />
+nltk.download('stopwords') <br />
+nltk.download('punkt') <br />
 
 # Run the Application 
 python -m streamlit run App.py
